@@ -55,7 +55,7 @@ h1, h2 {
 /* Images & Media */
 img {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     border: 1px solid var(--neon-green);
     filter: grayscale(100%) brightness(80%);
 }
