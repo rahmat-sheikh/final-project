@@ -1,60 +1,43 @@
-/* পুরো বডিকে কালো এবং টার্মিনালের মতো করা */
 body {
-    background-color: #0a0a0a;
-    color: #00ff00; /* টেক্সটের রঙ সবুজ */
-    font-family: 'Courier New', Courier, monospace; /* টার্মিনাল ফন্ট */
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
     padding: 30px;
-    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-/* নেভিগেশন বার ডিজাইন */
-nav {
-    border: 1px solid #00ff00;
+h2 { text-align: center; color: #333; }
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+
+input, select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* গুরুত্বপূর্ণ */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-nav a {
-    color: #00ff00;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #00ff00;
-    color: black;
-}
-
-/* শিরোনাম এবং সেকশন */
-h1, h2 {
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00; /* নিয়ন গ্লো ইফেক্ট */
-    border-left: 5px solid #00ff00;
-    padding-left: 10px;
-}
-
-/* মেনু লিস্ট এবং প্রাইস */
-li {
-    margin-bottom: 10px;
-}
-
-del {
-    color: #555;
-}
-
-span {
-    color: #ff00ff; /* দামের জন্য আলাদা রঙ */
-    font-weight: bold;
-}
-
-/* ছবিগুলো একটু স্টাইল করা */
-img {
-    border: 2px solid #00ff00;
-    box-shadow: 0 0 10px #00ff00;
-}
+.submit-btn:hover { background-color: #218838; }

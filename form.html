@@ -1,88 +1,51 @@
-/* Cyber/Hacker Style CSS */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
 
-:root {
-    --neon-green: #00ff41;
-    --dark-bg: #050505;
-    --terminal-font: 'Courier New', Courier, monospace;
-}
+    <div class="form-container">
+        <h2>Admission Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-body {
-    background-color: var(--dark-bg);
-    color: var(--neon-green);
-    font-family: var(--terminal-font);
-    padding: 20px;
-    margin: 0;
-}
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-.terminal-container {
-    max-width: 900px;
-    margin: auto;
-    border: 1px solid var(--neon-green);
-    padding: 30px;
-    box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
-}
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    border-bottom: 2px solid var(--neon-green);
-    padding-bottom: 10px;
-}
+            <!-- Academic Information -->
+            <div class="form-group">
+                <label for="department">Select Department</label>
+                <select id="department" name="department" required>
+                    <option value="">--Choose Department--</option>
+                    <option value="cse">Computer Science & Engineering (CSE)</option>
+                    <option value="eee">Electrical & Electronic Engineering (EEE)</option>
+                    <option value="bba">Bachelor of Business Administration (BBA)</option>
+                </select>
+            </div>
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+            <div class="form-group">
+                <label for="gpa">HSC GPA</label>
+                <input type="number" step="0.01" id="gpa" name="gpa" placeholder="e.g. 4.75" required>
+            </div>
 
-nav a {
-    color: var(--neon-green);
-    text-decoration: none;
-    font-weight: bold;
-}
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
 
-nav a:hover {
-    background-color: var(--neon-green);
-    color: black;
-}
-
-/* Headlines */
-h1, h2 {
-    text-transform: uppercase;
-    text-shadow: 0 0 8px var(--neon-green);
-}
-
-/* Images & Media */
-img {
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid var(--neon-green);
-    filter: grayscale(100%) brightness(80%);
-}
-
-iframe {
-    width: 100%;
-    max-width: 660px;
-    border: 1px solid var(--neon-green);
-}
-
-/* UI Elements */
-button {
-    background: transparent;
-    border: 2px solid var(--neon-green);
-    color: var(--neon-green);
-    padding: 10px 20px;
-    cursor: pointer;
-    font-family: var(--terminal-font);
-}
-
-button:hover {
-    background: var(--neon-green);
-    color: black;
-}
-
-.content-block {
-    margin-top: 40px;
-    border-left: 2px solid var(--neon-green);
-    padding-left: 20px;
-}
+</body>
+</html>
